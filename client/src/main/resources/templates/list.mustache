@@ -1,0 +1,26 @@
+{{#layout}}
+    <div class="md:flex md:items-center mb-6">
+        <div class="px-3 mx-auto">
+            <h1>Book Library</h1>
+        </div>
+    </div>
+    {{#books.size}}
+        <ul class="list-reset">
+            {{#books}}
+                <li>
+                    <a href="/edit/{{id}}" class="block bg-gray-100 p-2 rounded mt-1 border-b border-gray cursor-pointer block hover:bg-gray-200 text-gray-800 p-4 font-bold">
+                        {{title}}
+                    </a>
+                </li>
+            {{/books}}
+        </ul>
+    {{/books.size}}
+    <div class="md:flex md:items-center mt-6">
+        <div class="px-3 mx-auto">
+            <a href="/add"
+               class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
+                Add
+            </a>
+        </div>
+    </div>
+{{/layout}}

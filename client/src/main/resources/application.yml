@@ -1,0 +1,5 @@
+server:
+  port: 8081
+spring:
+  mustache:
+    expose-request-attributes: true
